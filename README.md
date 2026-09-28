@@ -1,6 +1,9 @@
-# localizeme CLI
+# LocalizeMe CLI
 
-Pull and push LocalizeMe translations from your build.
+Pull and push [LocalizeMe](https://localizeme.app/?src=github-cli) translations from your build or CI,
+as the files your app compiles and where your project keeps them: Android
+`values-de/strings.xml`, iOS `Localizable.xcstrings` or `de.lproj`, Flutter
+`app_de.arb`, web `locales/de.json`.
 
 No runtime dependencies — everything it needs is in the Python standard library,
 so a CI step that installs it cannot break because of somebody else's release.
@@ -204,6 +207,32 @@ or bundles them next, so put it before that:
         env:
           LOCALIZEME_API_KEY: ${{ secrets.LOCALIZEME_API_KEY }}
 ```
+
+## About LocalizeMe
+
+[LocalizeMe](https://localizeme.app/?src=github-cli) is a localization platform
+for product teams: every string your apps ship, in every language, in one
+place.
+Translators work in an editor with review statuses, screenshots that show
+where a string appears, key groups and the full history of every change.
+
+- **Unlimited keys and languages on every plan, the free one included.** Paid
+  plans are one flat price per workspace, not per seat or per string.
+- **The files every platform uses:** Android `strings.xml`, iOS `.xcstrings`
+  and `.strings`, Flutter ARB, JSON, YAML, CSV, XLIFF 1.2, gettext PO and Java
+  `.properties`, with a separate value per platform where iOS and Android need
+  to differ.
+- **Strings over the air:** the
+  [iOS](https://github.com/localizeme-app/localizeme-ios-sdk) and
+  [Android](https://github.com/localizeme-app/localizeme-android-sdk) SDKs
+  update an app's text without a store release.
+- **For developers and their agents:** this CLI
+  for builds and CI, a REST API, and an MCP server that Claude, Cursor and
+  other coding agents can work with.
+
+[Start free](https://localizeme.app/register?src=github-cli), no credit card needed ·
+[Pricing](https://localizeme.app/pricing?src=github-cli) ·
+[Developers](https://localizeme.app/developers?src=github-cli)
 
 ## License
 
