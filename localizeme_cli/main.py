@@ -62,7 +62,7 @@ def _add_common(parser):
     parser.add_argument('--project', help='Project id.')
     parser.add_argument('--api-key', dest='api_key', help=f'Overrides {ENV_API_KEY}.')
     parser.add_argument('--api-url', dest='api_url', help='API base URL.')
-    parser.add_argument('--platform', help='all, web, ios, android or dashboard.')
+    parser.add_argument('--platform', help='all (the shared values) or one of the project\'s platform codes, e.g. ios.')
     parser.add_argument('--language', help='One language code. Default: every language.')
     parser.add_argument(
         '--source-path', dest='source_path',
