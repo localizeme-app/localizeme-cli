@@ -17,7 +17,9 @@ pipx install localizeme
 
 Create an API key under **Developer access** in the dashboard. A read-only key,
 which is what the dashboard makes unless you switch it, is all `pull` and
-`init` need; `push` needs one with full access. Then:
+`init` need; `push` needs one with full access. Limit it to the projects the
+repository uses, and the secret in its CI reaches nothing else in your account.
+Then:
 
 ```bash
 export LOCALIZEME_API_KEY=lz_live_...
