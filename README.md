@@ -238,6 +238,9 @@ where a string appears, key groups and the full history of every change.
 [Pricing](https://localizeme.app/pricing?src=github-cli) ·
 [Developers](https://localizeme.app/developers?src=github-cli)
 
+Guides: [App localization](https://localizeme.app/app-localization?src=github-cli) ·
+[File format guides](https://localizeme.app/guides?src=github-cli)
+
 ## License
 
 Source-available under the [PolyForm Shield License 1.0.0](LICENSE), the same
